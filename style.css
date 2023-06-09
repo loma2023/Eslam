@@ -1,0 +1,442 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,500;0,700;0,800;1,100;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+* {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0.7s ease;
+}
+
+:root {
+    --white: #FFF;
+    --light: rgba(255, 255, 255, .3);
+    --black2: #fff;
+    --black1: #f5f5f5;
+    --blue: #3a6cf4;
+    --blue2: #087eb4;
+    --red: #0B4B6E;
+    --orange: #ff9500;
+    --background: linear-gradient(to bottom, #0a49f6, #0f3ebe, #113494, #122b70);
+    --backgroundHover: linear-gradient(to bottom, #083ac4, #062e9c, #09246d, #06143a);
+    --box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+
+    
+}
+
+html::-webkit-scrollbar {
+    width: 7px;
+}
+
+html::-webkit-scrollbar-track {
+    background: var(--black1);
+}
+
+html::-webkit-scrollbar-thumb {
+    background: var(--black2);
+    border-radius: 50px;
+}
+
+
+/* ==================== header ==================== */
+
+.header {
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    background: #fff;
+    font-size: 35px;
+    /* box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset; */
+    box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.4);
+    direction: rtl;
+}
+
+.header_up {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(204, 216, 216);
+    padding: 0px 100px;
+}
+
+.header_up h2 {
+    color: #087eb4;
+    font-size: 1em;
+    font-weight: 600;
+    margin-right: 10px;
+}
+
+.header_up ion-icon{
+    padding: 4px;
+    background: rgba(224, 223, 223, 0.4);
+    border-radius: 50%;
+    margin: 7px 5px 0 5px;
+    width: 35px;
+    color: #0B4B6E;
+}
+
+.header_up ion-icon:hover{
+    color: #087eb4;
+    cursor: pointer;
+    box-shadow: 0px 1px 5px 1px rgba(0, 0, 0, 0.24);
+}
+
+.header_down {
+    display: flex;
+    justify-content: space-between;
+    width: 35%;
+    margin: auto;
+}
+
+.header_down a {
+    padding: 5px 5px 0px 5px;
+    color: #0B4B6E;
+}
+
+.header_down a:hover {
+    cursor: pointer;
+    color: #087eb4;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    background: rgba(224, 223, 223, 0.4);
+    border-radius: 10px;
+}
+
+
+/* ==================== sections ==================== */
+
+section {
+    padding: 120px 80px;
+    padding-bottom: 50px;
+    width: 100%;
+    min-height: 100vh;
+    text-align: center;
+    /* background: linear-gradient(to bottom, #1562aa, #195185, #19436b, #12314e); */
+    background: var(--black1);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.title {
+    color:var(--blue2);
+    font-size: 35px;
+    margin: 20px 0;
+}
+
+/* ==================== main ==================== */
+
+.main {
+    width: 100%;
+    min-height: 100vh;
+    display: block;
+    align-items: center;
+    background: url(img/bg.png)no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    text-align: start;
+    padding-top: 200px;
+
+}
+
+.main h2 {
+    color: var(--white);
+    font-size: 2em;
+    font-weight: 700;
+}
+
+.main h2 span::after {
+    display: inline-block;
+    margin-top: 10px;
+    color: var(--blue);
+    font-size: 2em;
+    font-weight: 600;
+    content: "";
+    animation: type 5s infinite linear;
+}
+
+@keyframes type{
+    0%{content: "D" ;}
+    6%{content: "D|" ;}
+    12%{content: "De|" ;}
+    18%{content: "Des|" ;}
+    24%{content: "Desi|" ;}
+    30%{content: "Desig|" ;}
+    36%{content: "Design|" ;}
+    42%{content: "Designe|" ;}
+    48%{content: "Designer|" ;}
+    54%{content: "Designer" ;}
+    60%{content: "Designe|" ;}
+    66%{content: "Design|" ;}
+    72%{content: "Desig|" ;}
+    78%{content: "Desi|" ;}
+    84%{content: "Des|" ;}
+    90%{content: "De|" ;}
+    100%{content: "D|" ;}
+}
+
+.main h3 {
+    color: var(--white);
+    font-size: 2em;
+    font-weight: 70px;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.main-btn {
+    color: var(--white);
+    background: var(--background);
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 600;
+    display: inline-block;
+    padding: 0.9375em 2.1875em;
+    letter-spacing: 1px;
+    border-radius: 15px;
+    margin-bottom: 40px;
+}
+
+.main-btn:hover {
+    background: var(--backgroundHover);
+    transform: scale(1.05);
+}
+
+.main .social-icons a {
+    font-size: 35px;
+    padding: 5px 5px 0px 5px;
+    color: var(--white);
+    margin: 0 5px;
+    border-radius: 15px;
+    background: var(--background);
+    box-shadow: var(--box-shadow);
+}
+
+.main .social-icons a:nth-child(1){
+    background: rgb(54, 102, 233);
+}
+
+.main .social-icons a:nth-child(2){
+    background: rgb(32, 236, 13);
+}
+
+.main .social-icons a:nth-child(3){
+    background: rgb(255, 72, 0);
+}
+
+.main .social-icons a:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    /* background: var(--backgroundHover); */
+}
+
+
+/* ==================== services ==================== */
+
+.services .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    gap: 20px 100px;
+    margin-top: 50px;
+    font-size: 15px;
+}
+
+.services .card {
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+    background: var(--black2);
+    color: var(--blue2);
+    box-shadow: var(--box-shadow);
+    border: .1rem solid var(--light);
+}
+
+.services .card:hover {
+    transform: scale(1.05);
+    cursor: default;
+}
+
+.services .card ion-icon {
+    font-size: 6rem;
+    margin-bottom: 40px;
+}
+
+/* ==================== Project ==================== */
+
+.Projects{
+    background: #ececec;
+}
+
+.Projects .container {
+    width: 100%;
+    margin-top: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.Projects .container .section {
+    width: 100%;
+    position: absolute;
+    right: -110%;
+}
+
+.Projects .container .active {
+    right: 0%;
+}
+
+.Projects .container .first,
+.Projects .container .last {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 20px 3rem;
+    margin: 10px 0;
+}
+
+.Projects .container .last {
+    grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
+}
+
+.Projects .card {
+    width: 100%;
+    background: var(--white);
+    border-radius: 12px 12px;
+    border: 0.1rem solid #585757;
+    position: relative;
+    overflow: hidden;
+    box-shadow: var(--box-shadow);
+}
+
+.Projects .card img {
+    width: 100%;
+
+    border-radius: 15px 15px 0 0 ;
+}
+
+.Projects .first .card img {
+    height: 250px;
+}
+
+.Projects .last .card img {
+    height: 400px;
+}
+
+.Projects .card .starts{
+    position: absolute;
+    top: 25px;
+    left: -40px;
+    background: #fff;
+    padding: 3px 30px;
+    transform: rotate(-45deg);
+    /* border-radius:0 0 10px 0; */
+    color: var(--orange);
+    font-size: 15px;
+}
+
+.Projects .card .reactive{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(3rem, 1fr));
+    margin-top: -4px;
+}
+
+.Projects .card .reactive a{
+    border-right: 1px solid rgba(0, 0, 0, 0.2);
+    font-size: 19px;
+    font-weight: 700;
+    padding: 7px 0 10px ;
+    color: #0c90b1;
+}
+
+.Projects .card .reactive a:hover {
+    color: #fff;
+    background: #035e7b;
+    cursor: pointer;
+}
+
+.Projects .card .reactive .active{
+
+    color: var(--orange);
+
+}
+
+
+
+/* ==================== @media ==================== */
+
+@media(max-width:1102px) {
+    .header_down {
+        width: 93%;
+    }
+    .services .container {
+        gap: 20px;
+        margin-top: 50px;
+    }
+
+    .Projects .container #Design-image .first,
+    .Projects .container #Design-image .last {
+        grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+        gap: 10px 1rem;
+    }
+}
+
+@media(max-width:912px) {
+    .header {
+        font-size: 28px;
+    }
+    .header_up {
+        font-size: 28px;
+        padding: 7px 3px 0 15px ;
+    }
+    .header_up ion-icon{
+        margin: 0px 3px;
+        padding: 2px;
+        width: 28px;
+    }
+    section {
+        padding: 100px 20px;
+    }
+    .Projects .container #Design-image .first,
+    .Projects .container #Design-image .last {
+        grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+        gap: 20px 0.5rem;
+    }
+}
+
+@media(max-width:550px) {
+    .services .container {
+        grid-template-columns: repeat(auto-fit, minmax(7rem, 1fr));
+        gap: 20px 10px;
+        font-size: 10px;
+    }
+    .services .card ion-icon {
+        font-size: 3rem;
+        margin-bottom: 20px;
+    }   
+}
+
+@media(max-width:440px) {
+    .main h3{
+            font-size: 1.5em;
+    }
+    .Projects #Design-image .last .card img {
+        height: 75vh;
+    }
+    .title {
+        font-size: 23px;
+    }
+}
+
+@media (max-width:280px) {
+    .header_up {
+        padding: 0 5px;
+    }
+
+    .header_up .logo {
+        width: 100px;
+    }
+}
